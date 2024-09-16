@@ -1,5 +1,4 @@
-#import LLM software
-#lookup what is this code doing
+
 from langchain_ollama import OllamaLLM
 """""
 #prompt template
@@ -25,7 +24,6 @@ model = OllamaLLM(model="llama3")
 prompt =ChatPromptTemplate.from_template(template)
 #Chain the model and prompt together
 
-#what does the pipe operate mean in python
 chain = prompt | model
 
 def handle_conversation():
